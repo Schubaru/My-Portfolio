@@ -1,0 +1,84 @@
+/*nav bar jazz*/
+nav, .block_element {
+    height: 50px;
+    background-color: black;
+}
+.inline-block {
+    font-family: 'montserrat';
+    color: #ffadf2;
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px;
+    float: right;
+}
+.sectionLabel {
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 200;
+    margin-left: 100px;
+}
+/*hero section*/
+.heroSpace {
+    height: 600px;
+    padding: 15px;
+    text-align: center;
+}
+.nameTitle {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 300px;
+}
+#justTitle {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+#bio {
+    width: 350px;
+    height: 44px;
+    float: center;
+}
+.normalContent {
+    font-family: 'Open sans';
+}
+#profilePic {
+    float: center;
+}
+.heroContent {
+    text-align: center;
+}
+
+/*case studies section*/
+.card {
+    display: inline-block;
+    background-color: #C6C6C6;
+    border-radius: 5px;
+    height: 220px;
+    width: 600px;
+    margin: 35px;
+    box-shadow: 5px 10px #E5E5E5;
+    margin-left: 350px;
+}
+
+/*pieces section*/
+
+/*About me section*/
+
+/*footer*/ 
+
+#footContainer {
+    height: 169px;
+    background-color: black;
+    text-align: center;
+    padding-top: 69px;
+}
+
+#footQuote {
+    font-size: 14px;
+    font-family: 'Open sans';
+    color: white;
+}
+#email {
+    font-size: 14px;
+    font-family: 'Open sans';
+    color: white;
+}
