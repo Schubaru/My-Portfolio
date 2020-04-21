@@ -15,7 +15,7 @@ nav, .block_element {
     font-family: 'Montserrat';
     font-size: 28px;
     font-weight: 200;
-    margin-left: 100px;
+    
 }
 /*hero section*/
 .heroSpace {
@@ -25,7 +25,7 @@ nav, .block_element {
 }
 .nameTitle {
     font-family: 'Montserrat';
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 300px;
 }
 #justTitle {
@@ -33,35 +33,118 @@ nav, .block_element {
     font-size: 20px;
 }
 #bio {
-    width: 350px;
-    height: 44px;
-    float: center;
+    width: 600px;
+    height: 100px;
+    display: inline-block;
+    
 }
 .normalContent {
     font-family: 'Open sans';
 }
 #profilePic {
     float: center;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
 }
 .heroContent {
     text-align: center;
+    display: block;
 }
 
 /*case studies section*/
-.card {
-    display: inline-block;
-    background-color: #C6C6C6;
-    border-radius: 5px;
-    height: 220px;
-    width: 600px;
-    margin: 35px;
-    box-shadow: 5px 10px #E5E5E5;
-    margin-left: 350px;
+
+
+/*new work section*/
+.workGrid {
+    display: grid;
+    
+    grid-row-gap: 15px;
+    grid-template-areas: 
+    "hmiImage hmiContent"
+    "oneWayImage oneWayContent"
+    ;
+    
 }
 
-/*pieces section*/
+.workImg {
+    height:160px;
+    width:160px;
+}
+.workTitle {
+    font-family: 'open sans';
+    font-size: 16px;
+}
+.workContent {
+    font-family: 'open sans';
+    font-size: 14px;
+}
+.gridChild {
+    height: 200px;
+}
+button {
+    height: 26px;
+    width: 60px;
+    background-color: black;
+    border-radius: 5px;
+}
+.otherAction {
+    font-family: 'montserrat';
+    font-size: 18px;
+    font-weight: 200px;
+    margin-left: 100px;
+}
 
 /*About me section*/
+.normalContent {
+    width: 800px;
+    text-align: justify;
+    justify-content: center;
+    display: inline-block;
+    
+}
+
+/*new skills section*/
+.newSkills {
+    font-family: 'montserrat';
+    font-size: 26px;
+}
+.cardLabel {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 100;
+}
+.flexContainer {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+#uxCard {
+    width: 33%;
+    background-color: cornflowerblue;
+    margin-right: 5px;
+    border-radius: 12px;
+    text-align: center;
+}
+#uiCard {
+    width: 33%;
+    background-color: darkgoldenrod;
+    margin-right: 5px;
+    border-radius: 12px;
+    text-align: center;
+}
+#webDevCard {
+    width: 33%;
+    background-color: chartreuse;
+    border-radius: 12px;
+    text-align: center;
+}
+.cardImg {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
 
 /*footer*/ 
 
@@ -81,4 +164,25 @@ nav, .block_element {
     font-size: 14px;
     font-family: 'Open sans';
     color: white;
+    margin-top: 20px;
+}
+
+/*media query*/
+@media only screen and (max-width: 600px) {
+   
+    #profilePic {
+        height: 80px;
+        width: 80px;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-areas: 
+        "hmiImg"
+        "hmiContent"
+        "oneWayImg"
+        "oneWayContent";
+    }
+    .flexContainer {
+        flex-direction: column;
+    }
 }
